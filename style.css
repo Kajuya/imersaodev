@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap");
+
+body {
+	background: linear-gradient(38deg, #2b2520 27.26%, #14012e 96.03%);
+	font-family: "Raleway", sans-serif;
+}
+
+.container {
+	background: #1b2b34;
+	margin: 50px;
+	border-radius: 20px;
+	box-shadow: 7px 7px 7px #0c2426;
+	color: #ddebe6;
+	padding: 50px;
+}
+
+.cabecalho {
+	display: flex;
+	justify-content: spacebetween;
+}
+
+.perfil {
+	display: flex;
+}
+
+.perfil-foto {
+	border-radius: 600px;
+	border: 3px solid #f7f7f7;
+	max-height: 200px;
+	max-width: 200x;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+	margin: 20px;
+}
+
+.titulo {
+	margin-left: 20px;
+}
+
+.titulo h1 {
+	font-weight: 600;
+	font-size: 50px;
+}
+
+.titulo h3 {
+	font-weight: 400;
+	font-size: 25px;
+}
+
+.tema button {
+	align-self: flex-end;
+	width: 170px;
+	height: 40px;
+	font-size: 20px;
+	font-weight: 36px;
+	padding: 8px 16x;
+	background: #1c1c1c;
+	border: 2px solid #f7f7f7;
+	box-sizing: border-box;
+	border-radius: 100px;
+	color: #f7f7f7;
+}
+
+.projetos {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	padding: 20px;
+	font-size: 25px;
+	line-height: 40px;
+	/* Creditos ao Manuel Pinto (https://codepen.io/P1N2O/pen/pyBNzX) pelo background	 */
+	background: linear-gradient(-45deg, #000503, #031f12, #010b2e, #14012e);
+	background-size: 400% 400%;
+	animation: gradient 12s ease infinite;
+	box-shadow: 2px 2px 4px rgba(16, 16, 16, 0.42);
+	border-radius: 30px;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.projetos h1 {
+	font-weight: 600;
+	font-size: 40px;
+	line-height: 10px;
+}
+
+li {
+	list-style-type: none;
+	margin-bottom: 10px;
+	margin-left: 60px;
+	margin-right: 20px;
+}
+
+a {
+	color: #99c794;
+	text-decoration: none;
+}
+
+.light {
+	background: linear-gradient(236.85deg, #041832 27.26%, #3468a7 96.03%);
+}
+
+.light .tema button {
+	background: #ecf4ff;
+	border: 2px solid #0e1d2f;
+	box-sizing: border-box;
+	border-radius: 100px;
+	color: #0e1d2f;
+}
+
+.light .container {
+	background: #e8ebed;
+	color: #1c1c1c;
+}
+
+.light .projetos {
+	color: #f6f6f6;
+}
+
+.light .perfil-foto {
+	border: 3px solid #1c1c1c;
+}
